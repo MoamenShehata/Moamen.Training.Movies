@@ -1,6 +1,7 @@
 ﻿using Moamen.Training.Movies.Domain.Common;
 using Moamen.Training.Movies.Domain.CrewMembers;
 using Moamen.Training.Movies.Domain.Gallery;
+using Moamen.Training.Movies.Domain.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,6 @@ namespace Moamen.Training.Movies.Domain.Movies
         public ICollection<MovieMember> Crew { get; set; }
         public ICollection<Genre> Genres { get; set; }
         public ICollection<Media> Medias { get; set; }
+        public ICollection<User> Movies { get; set; }
     }
 }
