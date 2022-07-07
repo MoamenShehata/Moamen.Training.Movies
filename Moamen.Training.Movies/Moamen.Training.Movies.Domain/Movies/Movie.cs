@@ -19,8 +19,11 @@ namespace Moamen.Training.Movies.Domain.Movies
         public Rating Rating { get; set; }
         public TimeSpan Length { get; set; }
         public ICollection<MovieMember> Crew { get; set; }
+        public List<MovieMembers> MovieMembers { get; set; }
         public ICollection<Genre> Genres { get; set; }
+        public List<MovieGenres> MovieGenres { get; set; }
         public ICollection<Media> Medias { get; set; }
         public ICollection<User> Users { get; set; }
+        public List<MovieUsers> MovieUsers { get; set; }
     }
 }

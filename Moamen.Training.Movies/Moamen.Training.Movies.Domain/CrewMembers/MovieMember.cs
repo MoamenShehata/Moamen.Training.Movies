@@ -1,4 +1,5 @@
-﻿using Moamen.Training.Movies.Domain.Movies;
+﻿using Moamen.Training.Movies.Domain.Common;
+using Moamen.Training.Movies.Domain.Movies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,6 @@ namespace Moamen.Training.Movies.Domain.CrewMembers
         public int RoleId { get; set; }
         public MovieMemberRole Role { get; set; }
         public ICollection<Movie> Movies { get; set; }
+        public List<MovieMembers> MovieMembers { get; set; }
     }
 }

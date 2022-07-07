@@ -1,4 +1,5 @@
-﻿using Moamen.Training.Movies.Domain.Movies;
+﻿using Moamen.Training.Movies.Domain.Common;
+using Moamen.Training.Movies.Domain.Movies;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,6 @@ namespace Moamen.Training.Movies.Domain.Users
         public string PasswordHash { get; set; }
         public string PasswordSalt { get; set; }
         public ICollection<Movie> Movies { get; set; }
+        public List<MovieUsers> MovieUsers { get; set; }
     }
 }
