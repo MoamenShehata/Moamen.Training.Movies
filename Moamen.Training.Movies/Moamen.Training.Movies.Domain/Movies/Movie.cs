@@ -21,6 +21,6 @@ namespace Moamen.Training.Movies.Domain.Movies
         public ICollection<MovieMember> Crew { get; set; }
         public ICollection<Genre> Genres { get; set; }
         public ICollection<Media> Medias { get; set; }
-        public ICollection<User> Movies { get; set; }
+        public ICollection<User> Users { get; set; }
     }
 }
