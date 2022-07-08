@@ -15,7 +15,6 @@ namespace Moamen.Training.Movies.Domain.Users
         public string Email { get; set; }
         public string PasswordHash { get; set; }
         public string PasswordSalt { get; set; }
-        public ICollection<Movie> Movies { get; set; }
-        public List<MovieUsers> MovieUsers { get; set; }
+        public ICollection<MovieUsers> MovieUsers { get; set; }
     }
 }
