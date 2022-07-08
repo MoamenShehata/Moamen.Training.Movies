@@ -7,7 +7,6 @@ namespace Moamen.Training.Movies.Domain.Movies
     {
         public int Id { get; set; }
         public GenreType Type { get; set; }
-        public ICollection<Movie> Movies { get; set; }
-        public List<MovieGenres> MovieGenres { get; set; }
+        public ICollection<MovieGenres> MovieGenres { get; set; }
     }
 }
