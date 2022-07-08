@@ -31,7 +31,8 @@ namespace Moamen.Training.Movies.Persistance
             this.connectionString = connectionString;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=.;Database=Movies-DB;Trusted_Connection=True;");
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=.;Database=Movies-DB;Trusted_Connection=True;");
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer(connectionString);
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
