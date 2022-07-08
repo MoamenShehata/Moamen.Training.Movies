@@ -16,7 +16,7 @@ namespace Moamen.Training.Movies.Domain.CrewMembers
         public string WebsiteUrl { get; set; }
         public string Bio { get; set; }
         public double HeightInInches { get; set; }
-        public DateOnly DOB { get; set; }
+        public DateTime DOB { get; set; }
         public MovieMemberRoleType Role { get; set; }
         public ICollection<MovieMembers> MovieMembers { get; set; }
     }
