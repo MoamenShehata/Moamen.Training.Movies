@@ -1,4 +1,9 @@
+using Moamen.Training.Movies.API.Infrastrcuture;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.UseAutofacServiceProvider();
+builder.RegisterComponents(builder.Configuration.GetConnectionString("Default"));
 
 // Add services to the container.
 
