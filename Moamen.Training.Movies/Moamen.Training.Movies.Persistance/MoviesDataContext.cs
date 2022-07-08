@@ -24,9 +24,11 @@ namespace Moamen.Training.Movies.Persistance
         public DbSet<MovieUsers> MoviesUsers { get; set; }
         public DbSet<User> Users { get; set; }
 
-        public MoviesDataContext() : base()
-        {
 
+        private readonly string connectionString;
+        public MoviesDataContext(string connectionString)
+        {
+            this.connectionString = connectionString;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlServer("Server=.;Database=Movies-DB;Trusted_Connection=True;");
